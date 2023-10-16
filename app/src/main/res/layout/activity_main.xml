@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:columnCount="3"
+    android:rowCount="8"
+    android:padding="16dp"
+    android:background="#B4F5FD"
+    tools:context=".MainActivity">
+
+    <!-- Header -->
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_mute"
+        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_row="1"
+        android:layout_column="2"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:backgroundTint="#8BC34A"
+        android:text="🔇"
+        android:textSize="18sp"
+        app:cornerRadius="32dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bose Remote Control"
+        android:textSize="24sp"
+        android:layout_column="0"
+        android:layout_row="0"
+        android:layout_columnSpan="3"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Power Button -->
+
+    <!-- Power Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_power_on"
+        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+        android:layout_width="72dp"
+        android:layout_height="50dp"
+        android:layout_row="1"
+        android:layout_column="1"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:backgroundTint="#FF9800"
+        android:text="⭕"
+        android:textSize="18sp"
+        app:cornerRadius="32dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="72dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#FF9800"
+        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+        app:cornerRadius="32dp"
+        android:text="🔘"
+        android:textSize="18sp"
+        android:layout_column="0"
+        android:layout_row="1"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:id="@+id/btn_power_off"/>
+
+    <!-- Volume Up Button -->
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="72dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#8BC34A"
+        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+        app:cornerRadius="32dp"
+        android:text="-"
+        android:id="@+id/btn_volDown"
+        android:textSize="20dp"
+        android:layout_column="0"
+        android:layout_row="2"
+        android:layout_gravity="center"
+        android:layout_margin="8dp" />
+
+    <!-- Volume Down Button -->
+
+    <!-- Mute Button -->
+
+    <!-- TV Button -->
+
+    <!-- Tape Button -->
+
+    <!-- Room Select Switch -->
+
+    <!-- Text Label for "Salon" -->
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_volUp"
+        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+        android:layout_width="72dp"
+        android:layout_height="50dp"
+        android:layout_row="2"
+        android:layout_column="1"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:backgroundTint="#8BC34A"
+        android:text="+"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        app:cornerRadius="32dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_unmute"
+        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_row="2"
+        android:layout_column="2"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:backgroundTint="#8BC34A"
+        android:text="🔈"
+        android:textSize="18sp"
+        app:cornerRadius="32dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="72dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#2F4318"
+        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+        app:cornerRadius="32dp"
+        android:id="@+id/btn_tv"
+        android:layout_row="4"
+        android:layout_column="0"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:text="TV"
+        android:textSize="18sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="72dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#8A8C88"
+        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+        app:cornerRadius="32dp"
+        android:id="@+id/btn_tape"
+        android:layout_row="4"
+        android:layout_column="2"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:text="Tape"
+        android:textSize="18sp" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/swt_room"
+
+        android:layout_row="3"
+        android:layout_column="1"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:backgroundTint="#78AC44"
+        android:scaleX="2"
+        android:scaleY="1.3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_row="3"
+        android:layout_column="0"
+        android:layout_gravity="right|center_vertical"
+        android:layout_margin="8dp"
+        android:text="Salon"
+        android:textSize="14sp" />
+
+    <!-- Text Label for "Kitchen" -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_row="3"
+        android:layout_column="2"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="8dp"
+        android:text="Kitchen"
+        android:textSize="14sp" />
+</GridLayout>
